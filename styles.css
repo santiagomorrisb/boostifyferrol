@@ -1,71 +1,50 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f4fa;
+    color: #333333;
     margin: 0;
     padding: 0;
-    background-color: #f0f4fa; /* Azul muy claro */
-    color: #333333; /* Texto en gris oscuro */
 }
 
-/* Encabezado */
+/* Header */
 header {
-    background-color: #2a3b5f; /* Azul oscuro */
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a3b5f;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+header img.logo {
+    height: 50px;
+    width: auto;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
     gap: 1rem;
-    margin: 1rem 0 0;
-}
-
-nav ul li {
-    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ff9dbf; /* Rosa tenue */
+    color: #ff9dbf;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #e5e5e5; /* Gris claro */
-}
-
-/* Secciones */
-section {
-    padding: 2rem;
-    text-align: center;
-    border-bottom: 1px solid #cccccc;
-}
-
-section h2 {
-    color: #2a3b5f; /* Azul oscuro */
-}
-
-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-/* Pie de página */
+/* Footer */
 footer {
-    background-color: #2a3b5f; /* Azul oscuro */
-    color: #ffffff;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    font-size: 0.9rem;
+    padding: 1rem;
+    background-color: #2a3b5f;
+    color: white;
+    margin-top: 1rem;
 }
