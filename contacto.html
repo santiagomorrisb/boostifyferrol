@@ -11,10 +11,9 @@
     <header>
         <div class="header-content">
             <a href="index.html"><img src="logo.png" alt="BoostifyFerrol Logo" class="logo"></a>
-            <a href="index.html"><img src="boostifylogo_texto_nombre.png" alt="BoostifyFerrol Texto" class="logo-text"></a>
+            <a href="index.html"><img src="boostifyferrol-texto.png" alt="BoostifyFerrol Texto" class="logo-text"></a>
         </div>
     </header>
-    
     <nav>
         <ul>
             <li><a href="servicios.html">Servicios</a></li>
@@ -22,48 +21,29 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-
-    <section class="intro fade-in">
-        <h1>Contáctanos</h1>
-        <p>Para más información o si deseas obtener una cotización personalizada, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte a llevar tu negocio al siguiente nivel.</p>
-        
-        <h2>Detalles de contacto:</h2>
-        <ul>
-            <li><strong>Email:</strong> contacto@boostifyferrol.com</li>
-            <li><strong>Teléfono:</strong> +34 123 456 789</li>
-            <li><strong>Dirección:</strong> Calle de Ejemplo 123, Ferrol, A Coruña, España</li>
-        </ul>
-        
-        <h3>Formulario de Contacto</h3>
-        <form id="contactForm">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name" required><br><br>
-            
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="user_email" required><br><br>
-            
-            <label for="message">Mensaje:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="form-message" style="display: none; margin-top: 10px;"></p>
-    </section>
-
-    <!-- Footer dinámico -->
-    <footer id="dynamic-footer" class="hidden-footer">
-        <div class="footer-content">
-            <p>&copy; 2024 BoostifyFerrol | Todos los derechos reservados</p>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-            </div>
+    <main class="main-content">
+        <section class="intro fade-in">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo.</p>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="hidden-footer">
+        <p>&copy; 2024 BoostifyFerrol | Todos los derechos reservados</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
         </div>
     </footer>
-
-    <!-- EmailJS y JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,28 +1,19 @@
-// Footer dinámico
-const footer = document.getElementById('dynamic-footer');
+document.addEventListener("DOMContentLoaded", () => {
+    // Añadir animaciones de desvanecimiento
+    const fadeInElements = document.querySelectorAll(".fade-in");
+    fadeInElements.forEach(element => {
+        element.classList.add("show");
+    });
 
-window.addEventListener('scroll', () => {
-    const scrollHeight = window.innerHeight + window.scrollY;
-    const documentHeight = document.documentElement.offsetHeight;
-
-    if (scrollHeight >= documentHeight) {
-        footer.classList.remove('hidden-footer');
-        footer.classList.add('visible-footer');
-    } else {
-        footer.classList.remove('visible-footer');
-        footer.classList.add('hidden-footer');
-    }
-});
-
-// Animaciones de desvanecimiento
-const fadeInElements = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
+    // Mostrar footer cuando el scroll llega al fondo
+    const footer = document.querySelector("footer");
+    window.addEventListener("scroll", () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+            footer.classList.remove("hidden-footer");
+            footer.classList.add("visible-footer");
+        } else {
+            footer.classList.remove("visible-footer");
+            footer.classList.add("hidden-footer");
         }
     });
 });
-
-fadeInElements.forEach((el) => observer.observe(el));
