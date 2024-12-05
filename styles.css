@@ -10,6 +10,20 @@ body {
     font-family: 'Arial', sans-serif; /* Fuente sencilla y moderna */
     background-color: #fff; /* Fondo blanco */
     color: #333; /* Texto en color oscuro para contraste */
+    line-height: 1.6; /* Interlineado para mayor legibilidad */
+}
+
+/* Centrado general para los textos */
+section, h1, h2, h3, p, ul, li, form {
+    text-align: center; /* Centrado de todo el texto */
+    max-width: 900px; /* Limita el ancho para evitar que el texto se expanda demasiado */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Distanciamiento adecuado entre secciones */
+section {
+    margin: 40px 0; /* Espacio entre secciones */
+    padding: 20px; /* Relleno interior */
 }
 
 /* Header */
@@ -18,6 +32,10 @@ header {
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #f0f0f0; /* Línea sutil debajo */
+    position: sticky;  /* Hace que el header se quede pegado al top */
+    top: 0; /* Se pega en la parte superior */
+    z-index: 1000; /* Asegura que se muestre por encima de otros elementos */
+    width: 100%; /* Para asegurar que el header cubra todo el ancho */
 }
 
 /* Estilo del logo y texto en el header */
@@ -195,19 +213,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header fijo */
-header {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #f0f0f0; /* Línea sutil debajo */
-    position: sticky;  /* Hace que el header se quede pegado al top */
-    top: 0; /* Se pega en la parte superior */
-    z-index: 1000; /* Asegura que se muestre por encima de otros elementos */
-    width: 100%; /* Para asegurar que el header cubra todo el ancho */
-}
-
-
 /* Colores sutiles */
 .rosa-claro {
     color: #ffb6c1;
@@ -220,4 +225,3 @@ header {
 .morado {
     color: #b79ff2;
 }
-
