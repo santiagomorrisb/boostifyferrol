@@ -23,7 +23,7 @@
         </ul>
     </nav>
 
-    <section class="intro">
+    <section class="intro fade-in">
         <h1>Contáctanos</h1>
         <p>Para más información o si deseas obtener una cotización personalizada, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte a llevar tu negocio al siguiente nivel.</p>
         
@@ -50,13 +50,20 @@
         <p id="form-message" style="display: none; margin-top: 10px;"></p>
     </section>
 
-    <footer>
-        <p>&copy; 2024 BoostifyFerrol | Todos los derechos reservados</p>
+    <!-- Footer dinámico -->
+    <footer id="dynamic-footer" class="hidden-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 BoostifyFerrol | Todos los derechos reservados</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- EmailJS script -->
+    <!-- EmailJS y JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <!-- Archivo JavaScript personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
