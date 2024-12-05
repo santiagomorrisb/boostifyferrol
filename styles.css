@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Contenedor principal que envuelve todo excepto el footer */
+main {
+    flex: 1; /* Toma todo el espacio disponible */
+    margin-top: 120px; /* Altura combinada del header (50px) y del nav (50px, ajustable) */
+}
 
 /* Fuente moderna y minimalista */
 body {
@@ -16,6 +21,10 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el contenido se acomode correctamente */
+    display: flex;
+    flex-direction: column; /* Organiza el contenido en columnas */
+    min-height: 100vh; /* Asegura que el cuerpo abarque toda la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
 }
 
 /* Centrado general para los textos */
@@ -34,14 +43,15 @@ section {
 /* Header */
 header {
     background-color: #fff; /* Fondo blanco */
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     border-bottom: 2px solid #f0f0f0; /* Línea sutil debajo */
-    position: sticky;  /* Hace que el header se quede pegado al top */
+    position: fixed;  /* Hace que el header se quede pegado al top */
     top: 0; /* Se pega en la parte superior */
     z-index: 1000; /* Asegura que se muestre por encima de otros elementos */
     width: 100%; /* Para asegurar que el header cubra todo el ancho */
 }
+
 
 /* Estilo del logo y texto en el header */
 header .header-content {
@@ -66,10 +76,18 @@ header .logo-text {
 
 /* Navegación */
 nav {
-    background-color: #f8f8f8; /* Fondo muy claro */
-    padding: 10px 0;
+    background-color:#ddd; /* Fondo muy claro */
+    padding: 1px;
+    height: 60px;
+    width: 100%;
+    position: fixed; /* Hace que el nav esté siempre visible */
+    top: 60px; /* Justo debajo del header (ajusta según la altura del header) */
+    z-index: 950; /* Por debajo del header pero encima del contenido */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave para mostrar/ocultar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para diferenciar del contenido */
 }
 
+/* Lista de navegación */
 nav ul {
     list-style: none;
     text-align: center;
@@ -91,7 +109,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #fff;
-    background-color: #ffb6c1; /* Rosa claro al pasar el mouse */
+    background-color: #add8e6; /* Rosa claro al pasar el mouse */
     border-radius: 5px;
 }
 
@@ -120,7 +138,7 @@ nav ul li a:hover {
 
 /* Estilo de los botones en formularios */
 button {
-    background-color: #ffb6c1; /* Rosa claro */
+    background-color: #add8e6; /* Rosa claro */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -134,15 +152,16 @@ button:hover {
     background-color: #f7a7b2; /* Rosa un poco más oscuro */
 }
 
-/* Estilo del Footer */
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
     width: 100%; /* Hace que el footer se extienda a todo el ancho */
-    position: relative;
-    bottom: 0;
+    height: 20%;
+    position:static; /* Ancla el footer al fondo */
+    bottom: 0; /* Se pega a la parte inferior de la ventana */
 }
 
 
