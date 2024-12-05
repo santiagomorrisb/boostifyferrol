@@ -140,7 +140,11 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    width: 100%; /* Hace que el footer se extienda a todo el ancho */
+    position: relative;
+    bottom: 0;
 }
+
 
 footer p {
     font-size: 14px;
