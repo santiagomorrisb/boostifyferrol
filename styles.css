@@ -7,17 +7,21 @@
 
 /* Fuente moderna y minimalista */
 body {
-    text-align: center;
     font-family: 'Arial', sans-serif; /* Fuente sencilla y moderna */
     background-color: #fff; /* Fondo blanco */
     color: #333; /* Texto en color oscuro para contraste */
     line-height: 1.6; /* Interlineado para mayor legibilidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenido se acomode correctamente */
 }
 
 /* Centrado general para los textos */
 section, h1, h2, h3, p, ul, li, form {
     text-align: center; /* Centrado de todo el texto */
-    max-width: 900px; /* Limita el ancho para evitar que el texto se expanda demasiado */
+    max-width: 800px; /* Limita el ancho para evitar que el texto se expanda demasiado */
     margin: 0 auto; /* Centra el contenido */
 }
 
