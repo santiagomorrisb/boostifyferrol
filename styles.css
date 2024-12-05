@@ -195,6 +195,19 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Header fijo */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0; /* Línea sutil debajo */
+    position: sticky;  /* Hace que el header se quede pegado al top */
+    top: 0; /* Se pega en la parte superior */
+    z-index: 1000; /* Asegura que se muestre por encima de otros elementos */
+    width: 100%; /* Para asegurar que el header cubra todo el ancho */
+}
+
+
 /* Colores sutiles */
 .rosa-claro {
     color: #ffb6c1;
