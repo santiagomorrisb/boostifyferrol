@@ -7,6 +7,7 @@
 
 /* Fuente moderna y minimalista */
 body {
+    text-align: center;
     font-family: 'Arial', sans-serif; /* Fuente sencilla y moderna */
     background-color: #fff; /* Fondo blanco */
     color: #333; /* Texto en color oscuro para contraste */
